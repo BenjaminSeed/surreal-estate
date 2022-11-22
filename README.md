@@ -14,7 +14,6 @@ This property search engine will have multiple pages such as:
 ### Technologies and Testing used
 
 - [React](https://reactjs.org/)
-- [Jest](https://jestjs.io/)
 - [RTL](https://testing-library.com/docs/react-testing-library/intro/)
 
 ### Packages Used

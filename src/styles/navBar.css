@@ -25,3 +25,12 @@
   padding-right: 20px;
   display: flex;
 }
+
+.item {
+  padding-right: 20px;
+  color: cornflowerblue;
+}
+
+.item:active {
+  color: red;
+}

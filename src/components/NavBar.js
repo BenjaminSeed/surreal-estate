@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/navBar.css";
 
 const NavBar = () => {
@@ -11,8 +12,12 @@ const NavBar = () => {
       />
       <ul className="navbar-links">
         <li className="navbar-links-item" />
-        <li>View Properties</li>
-        <li>Add a Property</li>
+        <Link className="item" to="/">
+          View Properties
+        </Link>
+        <Link className="item" to="/AddProperty">
+          Add a Property
+        </Link>
       </ul>
     </div>
   );
