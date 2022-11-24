@@ -2,13 +2,12 @@
   display: flex;
   background-color: white;
   border-bottom: gray;
-  height: 70px;
-  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 .logo {
   height: 70px;
-  max-width: auto;
   background-color: white;
   overflow: hidden;
 }

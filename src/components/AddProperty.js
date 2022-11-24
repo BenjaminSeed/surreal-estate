@@ -31,6 +31,7 @@ const AddProperty = () => {
         <label htmlFor="title">
           Title
           <input
+            type="text"
             id="title"
             name="title"
             value={fields.title}
