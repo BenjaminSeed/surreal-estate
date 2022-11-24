@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Orbitron&family=Press+Start+2P&display=swap");
+
+.add-property {
+  padding: 10px;
+}
+
+.add-property button {
+  background-color: lightskyblue;
+  font-size: medium;
+  border-radius: 12px;
+  font-family: "Orbitron", sans-serif;
+}
