@@ -1,5 +1,8 @@
+/* eslint-disable no-console */
 import React, { useState } from "react";
+import axios from "axios";
 import "../styles/add-property.css";
+import Alert from "./Alert";
 
 const AddProperty = () => {
   const initialState = {
@@ -12,13 +15,33 @@ const AddProperty = () => {
       type: "",
       email: "",
     },
+    alert: {
+      message: "",
+      isSuccess: false,
+    },
   };
 
   const [fields, setFields] = useState(initialState.fields);
+  const [alert, setAlert] = useState(initialState.alert);
 
   const handleAddProperty = (event) => {
     event.preventDefault();
-    console.log(fields);
+    setAlert({ message: "", isSuccess: false });
+    axios
+      .post("http://localhost:3000/api/v1/PropertyListing", fields)
+      .then(() => {
+        setAlert({
+          message: "Property has been successfully added",
+          isSuccess: true,
+        });
+      })
+      .catch(() => {
+        setAlert({
+          message: "Server error, please try again later",
+          isSuccess: false,
+        });
+      });
+    // console.log(fields);
   };
 
   const handleFieldChange = (event) => {
@@ -28,6 +51,7 @@ const AddProperty = () => {
   return (
     <div className="add-property">
       <form onSubmit={handleAddProperty}>
+        <Alert message={alert.message} success={alert.isSuccess} />
         <label htmlFor="title">
           Title
           <input
@@ -50,7 +74,7 @@ const AddProperty = () => {
             >
               <option value="Manchester">Manchester</option>
               <option value="Leeds">Leeds</option>
-              <option value="Shefield">Shefield</option>
+              <option value="Sheffield">Sheffield</option>
               <option value="Liverpool">Liverpool</option>
             </select>
           </label>

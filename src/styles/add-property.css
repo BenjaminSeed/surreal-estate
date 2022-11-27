@@ -35,9 +35,12 @@ input[type=text], select {
   }
 
   .add-property {
-    padding-left: 80px;
-    padding-right: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 0px;
-    padding-top: 20px;
-
+    padding-top: 30px;
   }
