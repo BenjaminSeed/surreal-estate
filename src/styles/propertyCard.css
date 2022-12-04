@@ -1,0 +1,57 @@
+.property-card {
+  background-color: whitesmoke;
+  width: auto;
+  gap: 7px;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.email {
+  display: flex;
+  justify-content: center;
+  background-color: lightblue;
+}
+
+.price {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+
+.bedrooms {
+  display: flex;
+  padding-right: 5px;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+
+.bathrooms {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+
+.title {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+
+.city {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+
+.properties {
+  padding: 0.5rem;
+}
+
+.properties > .item {
+  display: inline-block;
+  width: 33.33%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}

@@ -5,6 +5,7 @@ import "../styles/navBar.css";
 import NavBar from "./NavBar";
 import Properties from "./Properties";
 import AddProperty from "./AddProperty";
+import PropertyCard from "./PropertyCard";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Properties />} />
         <Route path="/AddProperty" element={<AddProperty />} />
+        <Route path="/PropertyCard" element={<PropertyCard />} />
       </Routes>
     </div>
   );
